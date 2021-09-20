@@ -141,10 +141,10 @@ export function PhotoDetail() {
             </Link>
           </li>
           <li>
-            <Link to="/:things">{photos[params.things].title}</Link>
+            <Link to={`/${params.things}`}>{photos[params.things].title}</Link>
           </li>
           <li className="is-active">
-            <Link to="/:things/:photoIndex">
+            <Link to={`/${params.things}/${params.photoIndex}`}>
               {photos[params.things].photos[Number(params.photoIndex)].title}
             </Link>
           </li>

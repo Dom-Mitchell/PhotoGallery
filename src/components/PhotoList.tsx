@@ -139,7 +139,7 @@ export function PhotoList() {
             </Link>
           </li>
           <li className="is-active">
-            <Link to="/:things">{photos[params.things].title}</Link>
+            <Link to={`/${params.things}`}>{photos[params.things].title}</Link>
           </li>
         </ul>
       </nav>
